@@ -1,0 +1,6 @@
+{{#if session.isAuthenticated}}
+  Witaj! Jesteś zalogowany.
+  Kliknij {{#link-to 'logout'}} wyloguj {{/link-to}}, aby się wylogować.
+{{else}}
+  Kliknij tutaj, aby się {{#link-to 'login'}} zalogować.{{/link-to}}
+{{/if}}
